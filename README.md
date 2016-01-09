@@ -23,7 +23,7 @@ famous_cats.sort
 ```
 One thing to be aware of is that the return value of `famous_cats` remains unchanged after using the `sort` method on it. Meaning if you call `famous_cats` again after the sort, it will still return `["lil' bub", "grumpy cat", "maru"]`, not the previously sorted array.
 
-This is because `sort` returns a new array, we generally store it into another variable. So we would do `sorted_cats = famous_cats.sort`. Now we have two copies of the array. One unsorted (`famous_cats`) and one sorted (`sorted_cats`). If you don't care about the sorted version of the array you can call `sort!`. This will sort the existing array without requiring you to save the return into a new variable. You'll notice the `!`. It's a ruby convention that a method with the `!` will do the operation in place. It will modify the receiver of the method (AKA the thing to the left of the dot).
+This is because `sort` returns a new array, we generally store it into another variable. So we would do `sorted_cats = famous_cats.sort`. Now we have two copies of the array. One unsorted (`famous_cats`) and one sorted (`sorted_cats`). If you don't care about keeping the original version of the array you can call `sort!`. This will sort the existing array without requiring you to save the return into a new variable. You'll notice the `!`. It's a ruby convention that a method with the `!` will do the operation in place. It will modify the receiver of the method (AKA the thing to the left of the dot).
 
 #### The `.reverse` Method
 This method reverses an array.
